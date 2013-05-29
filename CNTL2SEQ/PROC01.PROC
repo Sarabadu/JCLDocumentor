@@ -1,0 +1,12 @@
+//PROCE    PROC                                            
+//S1       EXEC  PGM=ICEMAN 
+//SORTIN    DD DSN=&DSENT  
+//SORTOUT   DD DSN=&DSSAL,               
+//             DISP=(NEW,CATLG,DELETE)        
+//             SPACE=(TRK,(45,15,50)),                
+//             DCB=(RECFM=FB,LRECL=80,BLKSIZE=800,DSORG=PO) 
+//SYSOUT    DD SYSOUT=*
+//SYSIN     DD * 
+  OPTION COPY 
+/* 
+//         PEND                                            
